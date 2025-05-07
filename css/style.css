@@ -16,9 +16,9 @@ text-decoration: none; color: inherit;}
 h1{font-size: 60px; font-weight: 600;}
 h2{font-size: 28px; font-weight: 600;}
 h3{font-size: 24px; font-weight: 500;}
-h4{font-size: 30px; font-weight: 600;}
+h4{font-size: 30px; font-weight: 300;}
 h5{font-size: 14px; font-weight: 700;}
-h6{font-size: 18px; font-weight: 300;}
+h6{font-size: 20px; font-weight: 600; margin-bottom: 8px;}
 p{font-size: 20px; font-weight: 300;}
 
   
@@ -69,10 +69,23 @@ header .navigazione-header {
 
 .card {max-width: 340px;}
 
+.card img:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
 .sfondo-bianco {
     background-color: white;   
     border-radius:10px;
-    color: #073126;}
+    color: #073126;
+    margin-bottom: 15px;
+}
+
+.scopri-parchi:hover {
+    color: #395A51;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
 
 .scopri-parchi {
     max-width: 1060px;
@@ -146,6 +159,11 @@ header .navigazione-header {
         padding-top: 340px;
         padding-left: 50px;}
 
+.bottone-bianco:hover {
+    background-color: #073126;
+    color: #ffffff;
+}
+
 
 /*News Letter*/
 
@@ -181,6 +199,19 @@ header .navigazione-header {
     border-radius: 30px;
     padding: 15px 30px 15px 30px;
     text-align: center;}
+
+.rettangolo-bianco .bottone-verde h5 {
+    padding: 15px 30px 15px 30px;
+}
+
+.news-letter div{
+    margin: auto;
+}
+
+.bottone-verde:hover {
+    background-color: #395A51;
+    color: #ffffff;
+}
 
 /*Footer*/
 
@@ -279,16 +310,8 @@ header .navigazione-header {
     border-radius: 10px;}
 
 /*uno*/
-.uno {
-    background-color: #073126;   
-    margin-bottom: 15px;
-    padding-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
-    }
 
 .uno .escursioni{
-    margin-top: 100px;
     margin-bottom: 60px;
 }
 
@@ -300,80 +323,278 @@ header .navigazione-header {
         margin-bottom: 40px;
     }
 
-    .uno .escursioni p {
-    list-style-type: disc; 
-    margin-bottom: 20px;
-    width: 450px;
+    .uno .escursioni-p {
+        display: flex;
+        justify-content: space-between;
     }
 
-    .uno .foto-img .treck {
-        margin-top: 280px;
-        position: relative;
+    .uno .escursioni-p p{
+        list-style-type: disc; 
+        margin-bottom: 20px;
+        width: 430px;
     }
 
-/*due*/
-.due {
-    background-color: white; 
-    color: #073126; 
-    border-radius: 10px; 
-    margin-bottom: 15px;
-    padding-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
+    .padding {
+        padding-top: 60px;
+        padding-bottom: 30px;
     }
 
-.due .visite{
-    margin-top: 100px;
-    margin-bottom: 60px;
+    .uno .foto-img {
+        position: sticky;
+        top: 20px; 
     }
-     
-.due .visite h2 {
-    margin-bottom: 40px;
-    }
+
+    @media (max-width: 600px) {
+        body {
+            margin: 0;
+        }
     
-.due .visite p {
-    margin-bottom: 20px;
-    width: 450px;
-    }
+        .contenitore {
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     
-.due .foto-img .bear {
-    margin-top: 200px;
-    position: relative;
+        header {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 15px;
+        }
+    
+        header h2 {
+            font-size: 24px;
+        }
+    
+        header .navigazione-header {
+            flex-direction: row;
+            gap: 10px;
+        }
+    
+        header .navigazione-header li p {
+            font-size: 18px;
+    
+        }
+    
+        .hero {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            line-height: 1.2;
+            text-align: left;
+        }
+    
+        .hero h1 {
+            font-size: 32px;
+        }
+
+        .hero h4{
+            font-size: 20px;
+            margin-top: 30px;
+        }
+    
+        .scopri-parchi {
+            flex-direction: row;
+            text-align: left;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            gap: 15px;
+        }
+    
+        .sezione-carte-home {
+            flex-direction: column;
+            gap: 15px;
+            padding-bottom: 40px;
+        }
+    
+        .card {
+            max-width: 100%;
+        }
+    
+        .box {
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+    
+        .attività-ed-esperienze {
+            width: 100%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: left;
+        }
+    
+        .attività-ed-esperienze h2 {
+            font-size: 22px;
+        }
+    
+        .attività-ed-esperienze .testo {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            gap: 10px;
+            font-size: 18px;
+        }
+    
+        .attività-ed-esperienze .testo p {
+            text-align: left;
+        }
+    
+        .img-trecking img{
+            border-radius: 10px;
+
+        }
+
+        .img-trecking h1 {
+            font-size: 26px;
+            line-height: 1.3;
+            padding-top: 220px;
+            padding-left: 15px;
+            max-width: 90%;
+            text-align: left;
+        }
+    
+        .news-letter {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between; 
+        }
+    
+        .rettangolo-bianco {
+            flex-direction: column; 
+            align-items: flex-start;
+            padding: 15px;
+        }
+    
+        .rettangolo-bianco p {
+            max-width: none; 
+            padding: 10px 30px 10px 10px;
+            text-align: left;
+            font-size: 14px;
+            flex-grow: 1; 
+        }
+    
+        .rettangolo-bianco .email {
+            padding: 10px 30px 10px 10px;
+        }
+    
+        .riga-marchio {
+            display: flex; 
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    
+        .privacy {
+            flex-direction: row;
+            gap: 15px;
+            text-align: left;
+        }
+    
+        .sezione-carte-parchi {
+            grid-template-columns: 1fr;
+            padding: 0 15px;
+        }
+    
+        .parchi .descrizione {
+            max-width: 100%;
+            padding: 0 15px;
+            font-size: 18px;
+            text-align: left;
+        }
+    
+        .attivita-introduzione {
+            padding-top: 40px;
+            padding-bottom: 30px;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: left;
+        }
+    
+        .attivita-introduzione h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    
+        .attivita-introduzione p {
+            font-size: 16px;
+            line-height: 1.3;
+            text-align: left;
+        }
+    
+        .foto-img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+    
+        .uno .escursioni {
+            margin-bottom: 30px;
+        }
+    
+        .uno .escursioni h3 {
+            font-size: 20px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+    
+        .uno .escursioni h2 { font-size: 22px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+    
+        .uno .escursioni-p {
+            flex-direction: column;
+            gap: 15px;
+        }
+    
+        .uno .escursioni-p p {
+            width: 100%;
+            font-size: 18px;
+            text-align: left;
+        }
+    
+        .uno .foto-img {
+            position: static;
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+    
+        .padding {
+            padding-top: 30px;
+            padding-bottom: 15px;
+        }
+    
+        footer {
+            padding: 20px 15px; /* Aggiunto padding orizzontale */
+        }
+    
+        footer .copyright {
+            text-align: left;
+            font-size: 10pt;
+            margin-top: 20px; /* Ridotto il margin-top */
+            margin-bottom: 20px; /* Ridotto il margin-bottom */
+        }
+    
+        footer .riga-marchio {
+            display: flex; /* Rende il footer orizzontale */
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    
+        footer .privacy {
+            flex-direction: row;
+            gap: 15px;
+            text-align: left;
+        }
+
+        .card {
+            margin: auto;
+        }
     }
-
-
-/*tre*/
-.tre{
-    background-color: #073126;   
-    margin-bottom: 15px;
-    padding-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
-    }
-
-.tre .sport{
-    margin-top: 100px;
-    margin-bottom: 60px;
-}
-
-.tre .sport h2 {
-    margin-bottom: 40px;
-}
-
-.tre .sport h5 {
-    margin-bottom: 60px;
-    width: 450px;
-}
-
-.tre .sport p {
-   list-style-type: disc; 
-   margin-bottom: 20px;
-   width: 450px;
-}
-
-.tre .foto-img .arrampicata {
-    margin-top: 280px;
-    position: relative;
-}
-
-
+            
