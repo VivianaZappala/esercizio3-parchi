@@ -468,11 +468,11 @@ header .navigazione-header {
         }
     
         .rettangolo-bianco p {
-            max-width: none; 
+        
             padding: 10px 30px 10px 10px;
             text-align: left;
             font-size: 14px;
-            flex-grow: 1; 
+            
         }
     
         .rettangolo-bianco .email {
@@ -591,10 +591,6 @@ header .navigazione-header {
             flex-direction: row;
             gap: 15px;
             text-align: left;
-        }
-
-        .card {
-            margin: auto;
         }
     }
             
